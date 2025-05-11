@@ -14,20 +14,21 @@ format:
     transition: slide
     background-transition: fade
     #slide-tone: true
-    # embed-resources: true
+    embed-resources: true
 
 title-slide-attributes:
-  # data-background-image: img/Wikipedia_Political_Physical_World_Map.svg.png
-  data-background-image: img/OSM_campus.png
+  data-background-image: img/Wikipedia_Political_Physical_World_Map.svg.png
+  # data-background-image: img/OSM_campus.png
+  data-background-size: contain
   data-background-color: "#3C1053"
-  # data-background-size: contain
   data-background-opacity: "0.3"
   data-notes: "Hello, we are Carlos Cámara and Tim Monteath, and today we are going to talk about something we are both passionate for: maps, and specifically about their relationship with how we see and shape the world."
 ---
 
+# {.center .smaller background-color="#3C1053" }
 ::::: columns
 ::: {.column width="50%"}
-![](img/carlos.png){fig-alt="Carlos Cámara" fig-align="center" width="350"}
+![](img/carlos.png){fig-alt="Carlos Cámara" fig-align="center" width="250"}
 
 **Carlos Cámara-Menoyo**
 
@@ -35,13 +36,13 @@ title-slide-attributes:
 
 [carlos.camara\@warwick.ac.uk](mailto:carlos.camara@warwick.ac.uk){.email}
 
-{{< fa brands mastodon >}}[@ccamara@scholar.social](https://scholar.social/@ccamara)
+<i class="fa-brands fa-mastodon"></i> [\@ccamara.scholar.social](https://scholar.social/@ccamara)
 
-{{< fa brands bluesky >}}[@ccamara.scholar.social.ap.brid.gy](https://bsky.app/profile/ccamara.scholar.social.ap.brid.gy)
+<i class="fa-brands fa-bluesky"></i> [@ccamara.scholar.social.ap.brid.gy](https://bsky.app/profile/ccamara.scholar.social.ap.brid.gy)
 :::
 
 ::: {.column width="50%"}
-![](img/tim.png){fig-alt="Timothy Monteath" fig-align="center" width="350"}
+![](img/tim.png){fig-alt="Timothy Monteath" fig-align="center" width="250"}
 
 **Timothy Monteath**
 
@@ -52,7 +53,6 @@ title-slide-attributes:
 {{< fa brands mastodon >}}
 
 {{< fa brands bluesky >}}
-
 :::
 :::::
 
@@ -68,7 +68,7 @@ Hello, we are Carlos Cámara and Tim Monteath, and today we are going to talk ab
 
 # Map-making {background-color="#3C1053"}
 
-## How are maps made?
+## How are maps made? {.smaller}
 
 :::::: columns
 ::: {.column width="50%"}
@@ -78,36 +78,167 @@ Picture or diagram of satellites or
 
 ![](https://www.science.org/do/10.1126/science.aar6218/abs/google%20car_16x9.jpg)
 
-This is what *Geodesy* does.
+This is what **Geodesy** does. Focus is on *mathematical foundation* (coordinates, Earth’s shape).
 
-Focus:
-
--   Precise positioning (GPS relies on geodesy).
-
--   Earth’s geoid (true shape, accounting for gravity variations).
-
--   Satellite-based measurements (like tectonic plate movements). Tools: GNSS (Global Navigation Satellite Systems), LiDAR, gravimeters.
-
-Example Questions:
-
--   How much did the land shift after an earthquake?
-
--   What’s the exact elevation of Mount Everest?
+Keywords: precision, geolocation, GPS, LIDAR, coordinates system...
 :::
 
 :::: {.column width="50%"}
 ::: large
-**2. Displaying data**
+**2. Displaying data** Find an image
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Nova_totius_Terrarum_Orbis_geographica_ac_hydrographica_tabula_%28Hendrik_Hondius%29_balanced.jpg/960px-Nova_totius_Terrarum_Orbis_geographica_ac_hydrographica_tabula_%28Hendrik_Hondius%29_balanced.jpg)
+
+This is what **Cartography** does. Focus is on *data visualisation*.
+
+Keywords: projections, shapes, size, colour...
 :::
 ::::
 ::::::
 
--   **Geodesy** provides the **mathematical foundation** (coordinates, Earth’s shape).
-
--   **Cartography** uses that data to **create maps**.
-
--   **Geography** interprets and analyzes spatial patterns **using those maps**.
-
 ::: notes
 For the sake of simplicity, we are going to summarise the process of making maps into two processes: 1. Positioning data 2. Displaying data
 :::
+
+## Who makes maps?  {.smaller}
+
+:::::: columns
+::: {.column width="33%" .fragment}
+**Companies**
+
+![](img/cov_google_map.png)
+Motivation: business model.
+
+- Google, Microsoft, Apple...
+- NASA
+- ESRI, Carto
+- ...
+
+Specific, detailed maps, related to their business model.
+
+:::
+
+::: {.column width="33%" .fragment}
+**Governments**
+
+![](https://www.ordnancesurvey.co.uk/img-assets/cards/products/4x3-os-vector-tile-api.xd8569ce0.jpg?w=750&f=webp)
+
+Motivation: public service
+
+_Official maps_
+
+
+
+- Landsat
+- Ordnance Survey
+
+:::
+
+::: {.column width="33%" .fragment}
+**Individuals!**
+
+![](img/cov_osm.png)
+
+Motivation: diverse
+Coverage and precision: diverse
+
+
+
+- OpenStreetMap
+- 
+
+:::
+::::::
+
+## Are maps objective?
+
+![](img/Well-Yes-But-Actually-No-crop.jpg)
+
+Each map involves a series of decisions that are anything but objective:
+
+
+
+## Are maps objective?
+
+![](img/Well-Yes-But-Actually-No.gif)
+
+::: {.r-fit-text}
+
+Each map involves a series of decisions that are anything but objective:
+:::
+
+## What is included (and what is not!)
+
+If we were to add everything in a map, it would be as complex as the Earth, and therefore not useful. -> Thematic maps
+
+Some maps from the same region, i.e. from Google, OSM, Apple, Ordnance Survey...?
+
+::: notes
+
+If we were to add everything in a map, it would be as complex as the Earth, and therefore not useful.
+
+:::
+
+## Projections
+
+![](https://www.joaoleitao.com/wp-content/uploads/2019/04/Several-projections-of-a-world-map.jpg)
+
+
+## Orientation {background-image="img/north_down.jpg" background-size="contain" }
+
+
+## Centre {background-image="img/street-fighter-ii-character-select-screen.jpg" background-size="contain"}
+
+
+# Maps and Power {background-color="#3C1053"}
+
+These decisions have implications:
+
+-   used to exert power
+
+-   to exclude / include
+
+
+## {background-image="img/true-size-africa.jpg" background-size="contain"}
+
+
+# Our research {background-color="#BBDF46"} 
+
+Can Digital Goods Be Neutral? Evaluating OpenStreetMap’s equity through participatory data visualisation
+
+## Motivation
+
+Use data visualisations to understand whether these decisions had a positive or negative impact in under-represented communities.
+
+## OSM
+
+We've mentioned already OSM. OSM is great. 
+
+> asdf
+
+### Render map(s)
+
+Photo with di
+
+
+## What?
+
+- Is OSM as neutral as it claims to be? 
+- How is the notion of neutrality being implemented? How is it affecting other, underrepresented demographics?
+- Are there
+
+
+## How?
+
+Participatory research: teaming with geochicas and workshops
+
+## Co-design visualisation
+
+Image of the dashboard
+
+
+## Workshop on alternative cartography
+
+You are invited!
+
+link: 
