@@ -50,9 +50,9 @@ title-slide-attributes:
 
 [Timothy.monteath\@warwick.ac.uk](mailto:Timothy.monteath@warwick.ac.uk)
 
-{{< fa brands mastodon >}}
+{{< fa brands mastodon >}}[\@twm.mastodon.sdf.org](https://mastodon.sdf.org@twm)
 
-{{< fa brands bluesky >}}
+{{< fa brands bluesky >}}[@twm.bsky.social](https://bsky.app/profile/twm.bsky.social)
 :::
 :::::
 
@@ -71,25 +71,27 @@ Hello, we are Carlos Cámara and Tim Monteath, and today we are going to talk ab
 ## How are maps made? {.smaller}
 
 :::::: columns
-::: {.column width="50%"}
-**1. Positioning data**
+::: {.column width="50%".fragment}
+**1. Geodesy**
 
-Picture or diagram of satellites or
+Is what figuring out where things are and how to record them. Focus is on *mathematical foundations* (coordinates, Earth’s shape).
 
 ![](https://www.science.org/do/10.1126/science.aar6218/abs/google%20car_16x9.jpg)
 
-This is what **Geodesy** does. Focus is on *mathematical foundation* (coordinates, Earth’s shape).
+This was once a huge scientific enterprise, today this is done by satellite and most of us, even very specialist geographers don't have to think about it very much.
 
 Keywords: precision, geolocation, GPS, LIDAR, coordinates system...
 :::
 
-:::: {.column width="50%"}
+:::: {.column width="50%".fragment}
 ::: large
-**2. Displaying data** Find an image
+**2. Cartogrpahy** 
+
+Is how we *visualize* information about *things* in the world on maps .
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Nova_totius_Terrarum_Orbis_geographica_ac_hydrographica_tabula_%28Hendrik_Hondius%29_balanced.jpg/960px-Nova_totius_Terrarum_Orbis_geographica_ac_hydrographica_tabula_%28Hendrik_Hondius%29_balanced.jpg)
 
-This is what **Cartography** does. Focus is on *data visualisation*.
+The history of cartography is long and detailed, and the question of what was mapped by whom has dramatically shaped the modern world.
 
 Keywords: projections, shapes, size, colour...
 :::
@@ -103,20 +105,6 @@ For the sake of simplicity, we are going to summarise the process of making maps
 ## Who makes maps?  {.smaller}
 
 :::::: columns
-::: {.column width="33%" .fragment}
-**Companies**
-
-![](img/cov_google_map.png)
-Motivation: business model.
-
-- Google, Microsoft, Apple...
-- NASA
-- ESRI, Carto
-- ...
-
-Specific, detailed maps, related to their business model.
-
-:::
 
 ::: {.column width="33%" .fragment}
 **Governments**
@@ -131,6 +119,21 @@ _Official maps_
 
 - Landsat
 - Ordnance Survey
+
+:::
+
+::: {.column width="33%" .fragment}
+**Companies**
+
+![](img/cov_google_map.png)
+Motivation: Business model.
+
+- Google, Microsoft, Apple...
+- NASA
+- ESRI, Carto
+- ...
+
+Specific, detailed maps, related to their business model.
 
 :::
 
@@ -152,14 +155,6 @@ Coverage and precision: diverse
 
 ## Are maps objective?
 
-![](img/Well-Yes-But-Actually-No-crop.jpg)
-
-Each map involves a series of decisions that are anything but objective:
-
-
-
-## Are maps objective?
-
 ![](img/Well-Yes-But-Actually-No.gif)
 
 ::: {.r-fit-text}
@@ -169,15 +164,23 @@ Each map involves a series of decisions that are anything but objective:
 
 ## What is included (and what is not!)
 
-If we were to add everything in a map, it would be as complex as the Earth, and therefore not useful. -> Thematic maps
+If we were to add everything in a map, it would be as complex as the Earth, and therefore not useful.
 
-Some maps from the same region, i.e. from Google, OSM, Apple, Ordnance Survey...?
+All maps must make decisions about what is included and what is not.
 
 ::: notes
 
 If we were to add everything in a map, it would be as complex as the Earth, and therefore not useful.
 
 :::
+
+## Projections
+
+The first decision we must make before we can even map anything is what projection we are going to use.
+
+A projection, is how we turn the the 3D globe of the earth into the 2D plane of map we see on a peice of paper or a a screen.
+
+No projection is perfect! Projection is an 'unsolvable problem' in that however we do it we are going to end up with some distortion somewhere on our map.
 
 ## Projections
 
@@ -192,7 +195,7 @@ If we were to add everything in a map, it would be as complex as the Earth, and 
 
 # Maps and Power {background-color="#3C1053"}
 
-These decisions have implications:
+All of the decision we make when we create maps have implications:
 
 -   used to exert power
 
@@ -212,25 +215,40 @@ Use data visualisations to understand whether these decisions had a positive or 
 
 ## OSM
 
-We've mentioned already OSM. OSM is great. 
+![](img/osm_coventry.png){fig-alt="An OpenStreetMap map of Coventry"}
 
-> asdf
+### OSM is huge!
 
-### Render map(s)
+:::: {.column width="50%"}
 
-Photo with di
+![](img/graph2.png){fig-alt="A graph of OpenStreetMap contributors"}
+
+:::: {.column width="50%"}
+
+![](img/graph3.png){fig-alt="A graph of OpenStreetMap features"}
+
+# OpenStreetMap is everywhere!
+
+*Major Sites*: Amazon, Apple, Baidu Maps, Facebook, Microsoft, Wikipedia and Wikimedia
+
+*Transport*: Air France, Alaska Airlines, Deutsche Bahn, Grab, SNCF (French rail agency), Uber
+Geodata Software and Services: CARTO, Digital Globe, ESRI, Garmin, Mapbox, Telenav
+
+*Government*: Agence Française de Développement , Government of Brazil, Government of Italy: President’s Office, Police Scotland, US National Park Service, US State Department, USAID, Peace Corps….
 
 
 ## What?
 
 - Is OSM as neutral as it claims to be? 
-- How is the notion of neutrality being implemented? How is it affecting other, underrepresented demographics?
-- Are there
-
+- How is the notion of neutrality being implemented? 
+- How is 'neutrality' affecting other, underrepresented demographics?
 
 ## How?
 
-Participatory research: teaming with geochicas and workshops
+Participatory research: teaming with *GeoChicas* and workshops
+
+GeoChicas is a collective of feminist women linked to OpenStreetMap, originally Spanish-speaking, who work for women's empowerment and the reduction of the gender gap in OpenStreetMap communities and in communities associated with the world of free software and open data.
+
 
 ## Co-design visualisation
 
