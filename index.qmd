@@ -64,7 +64,7 @@ Hello, we are Carlos Cámara and Tim Monteath, and today we are going to talk ab
 # Are maps objective?
 
 ::: fragment
-![](img/gulf-mexico-google.jpg)
+![](img/gulf-america.png)
 :::
 
 # Map-making {background-color="#3C1053"}
@@ -153,7 +153,6 @@ Each map involves a series of decisions that are anything but objective
 :::
 ::::
 
-
 ## Projections
 
 ![](https://www.joaoleitao.com/wp-content/uploads/2019/04/Several-projections-of-a-world-map.jpg)
@@ -170,9 +169,11 @@ A projection, is how we turn the the 3D globe of the earth into the 2D plane of 
 No projection is perfect! Projection is an 'unsolvable problem' in that however we do it we are going to end up with some distortion somewhere on our map.
 :::
 
+##  {background-image="img/true-size-africa.jpg" background-size="contain"}
+
 ## What is included (and what is not!)
 
-::::: columns
+:::::: columns
 ::: {.column width="33%"}
 ![OSM Carto: a General Purpose style](img/osm_cov_carto2.png)
 :::
@@ -184,55 +185,110 @@ No projection is perfect! Projection is an 'unsolvable problem' in that however 
 ::: {.column width="33%"}
 ![OSM Public transport layer](img/osm_cov_bike.png)
 :::
+::::::
 
+::::: columns
+::: {.column width="50%"}
+![](https://vividmaps.com/wp-content/uploads/2023/11/GDP_2022-1024x576.jpg)
+:::
+
+::: {.column width="50%"}
+![](img/gini-coefficient.png)
+:::
 :::::
 
 ::: notes
 All maps must make decisions about what is included and what is not.
 
 After all, If we were to add everything in a map, it would be as complex as the Earth, and therefore not useful.
-
 :::
 
+------------------------------------------------------------------------
 
+![](https://i.plumplot.co.uk/London-violent-crime-rate-comparison-map.png)
 
-## Orientation {background-image="img/north_down.jpg" background-size="contain"}
+Or take the example of a crime map. Usually expressed in maps like this. Without any context, as it crime simply happens in some places. How would the story change if displayed public investment, too ...or worse, ethnicity?
 
-## Centre {background-image="img/street-fighter-ii-character-select-screen.jpg" background-size="contain"}
+## Orientation
 
-# So what? {background-color="#3C1053"}
+::::: columns
+::: {.column width="40%"}
+![](img/yes.png){width="559"}
+:::
 
+::: {.column .fragment width="40%"}
+![](img/but.png){width="560"}
+:::
+:::::
+
+##  {background-image="img/north_down.jpg" background-size="contain"}
+
+![](img/yes_but_eartch.png)
+
+::: notes
+![The Earth, as seen from outer space](https://f.rpp-noticias.io/2020/12/31/1040805iss062-e-117852jpg.jpg)
+:::
+
+## Centre {background-image="img/street-fighter-ii-character-select-screen.jpg" background-size="contain" background-color="#000177"}
+
+#  {.center}
+
+::: r-fit-text
+So what?
+:::
+
+# Maps and power {.smaller background-color="#393A3B"}
+
+::::: columns
+::: {.column width="50%"}
 All maps are political and anything but neutral:
 
-- They follow a political agenda
-- Unconcious bias
+-   They follow a political agenda
+-   Prone to (unconcious) bias
 
 Either way, they influence/impact other people's lifes, especially in less privileged/underrepresented population:
 
-- Origin/Location
-- Gender
-- Sexual orientation...
+-   Origin/Geography
+-   Gender
+-   Sexual orientation...
 
-There's a long history of maps and power ILLUSTRATIVE MAP HERE?
+There's a long history of maps and power
+:::
 
+::: {.column width="50%"}
+![British Empire in 1886. Source: Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Imperial_Federation%2C_map_of_the_world_showing_the_extent_of_the_British_Empire_in_1886.jpg/960px-Imperial_Federation%2C_map_of_the_world_showing_the_extent_of_the_British_Empire_in_1886.jpg?20111207145101)
+:::
+:::::
 
+# Our research {background-color="#BBDF46" background-image="https://warwick.ac.uk/fac/cross_fac/cim/research/digital-good-neutrality-osm/screenshot_2024-09-19_at_10-15-55_esrc_digital_good_network_-_esrc_digital_good_network.png" background-position="95% 5%" background-size="127px 128px"}
 
+::: r-fit-text
+Can Digital Goods Be Neutral?
+:::
 
-##  {background-image="img/true-size-africa.jpg" background-size="contain"}
-
-# Our research {background-color="#BBDF46"}
-
-Can Digital Goods Be Neutral? Evaluating OpenStreetMap’s equity through participatory data visualisation
+Evaluating OpenStreetMap’s equity through participatory data visualisation
 
 ## Motivation
 
 Use data visualisations to understand whether these decisions had a positive or negative impact in under-represented communities.
 
+Inspiration: Data Feminism
+
+![](https://makingmaps.net/wp-content/uploads/2021/06/screen-shot-2021-06-02-at-9.10.14-am.png)
+
 ## OpenStreetMap (OSM)
 
-![](img/osm_coventry.png){fig-alt="An OpenStreetMap map of Coventry"}
+OSM is the largest and most exhaustive collaborative map of the world.
 
-### OSM is huge!
+Dubbed as the wikipedia of the maps.
+
+![](img/osm_id_editor.png){fig-alt="Editing OSM Data"}
+
+## OSM is huge!
+
+10,158,116 OSM users[^1]
+
+[^1]: According to <https://planet.openstreetmap.org/statistics/data_stats.html>
 
 ::::: columns
 ::: {.column width="50%"}
@@ -264,12 +320,50 @@ Participatory research: teaming with *GeoChicas* and workshops
 
 GeoChicas is a collective of feminist women linked to OpenStreetMap, originally Spanish-speaking, who work for women's empowerment and the reduction of the gender gap in OpenStreetMap communities and in communities associated with the world of free software and open data.
 
+## Some results
+
+## User demographics
+
+10,158,116 OSM users[^2]
+
+[^2]: According to <https://planet.openstreetmap.org/statistics/data_stats.html>
+
+::::: columns
+::: {.column width="50%"}
+![](img/osm_users_country.png)
+:::
+
+::: {.column width="50%"}
+![](img/osm_users_language.png)
+:::
+:::::
+
+## User Census
+
+![](img/osm_users_country.png)
+
 ## Co-design visualisation
 
-Image of the dashboard
+![](img/osm_dashboard_1.png)
 
 ## Workshop on alternative cartography
 
+![WEB Dubois map of Philadelphia](http://berkeleyjournal.org/wp-content/uploads/2016/01/Philadelphia.jpg)
+
 You are invited!
 
-link:
+link: <https://warwick.ac.uk/fac/cross_fac/cim/research/digital-good-neutrality-osm/inclusive-cartographies-workshop/>
+
+![Kelly 2020](img/iconography.png)
+
+## Some findings
+
+-   Bias in OSM's contributors -\> It is expected that it may influence how they contribute to the map -\> and how the map looks like.
+
+-   Awareness in OSM, but not much has done.
+
+-   Difficult tension:
+
+    -   OSM universalists aspiration collides with considerations
+
+-   
