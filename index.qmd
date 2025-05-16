@@ -209,7 +209,7 @@ After all, If we were to add everything in a map, it would be as complex as the 
 
 Or take the example of a crime map. Usually expressed in maps like this. Without any context, as it crime simply happens in some places. How would the story change if displayed public investment, too ...or worse, ethnicity?
 
-## Orientation
+## Orientation and alignment
 
 ::::: columns
 ::: {.column width="40%"}
@@ -223,21 +223,20 @@ Or take the example of a crime map. Usually expressed in maps like this. Without
 
 ##  {background-image="img/north_down.jpg" background-size="contain"}
 
-![](img/yes_but_eartch.png)
 
 ::: notes
 ![The Earth, as seen from outer space](https://f.rpp-noticias.io/2020/12/31/1040805iss062-e-117852jpg.jpg)
 :::
 
-## Centre {background-image="img/street-fighter-ii-character-select-screen.jpg" background-size="contain" background-color="#000177"}
+## {background-image="img/street-fighter-ii-character-select-screen.jpg" background-size="contain" background-color="#000177"}
 
-#  {.center}
+##  {.center}
 
 ::: r-fit-text
 So what?
 :::
 
-# Maps and power {.smaller background-color="#393A3B"}
+## Maps and power {.smaller background-color="#393A3B"}
 
 ::::: columns
 ::: {.column width="50%"}
