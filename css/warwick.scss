@@ -39,3 +39,60 @@ $link-color: $w_aubergine;
       }
   }
 }
+
+
+.highlight-text{
+  position:relative;
+}
+.highlight-text:before{
+  content:"";
+  background-color:#ff6db7;
+  width:100%;
+  height:1em;
+  position:absolute;
+  z-index:-1;
+  filter:url(#marker-shape);
+  left:-0.25em;
+  top:0.1em;
+  padding:0 0.25em;
+}
+
+.sketch-highlight{
+  position:relative;
+  padding: 0 5px;
+}
+
+.sketch-highlight:before{
+  content:"";
+  z-index:-1;
+  left:0em;
+  top:0em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ff1493;
+  position:absolute;
+  border-right-color:transparent;
+  width:100%;
+  height:1em;
+  transform:rotate(2deg);
+  opacity:0.5;
+  border-radius:0.25em;
+}
+
+.sketch-highlight:after{
+  content:"";
+  z-index:-1;
+  left:0em;
+  top:0em;
+  border-width:2px;
+  border-style:solid;
+  border-color: #ff1493;
+  border-left-color:transparent;
+  border-top-color:transparent;
+  position:absolute;
+  width:100%;
+  height:1em;
+  transform:rotate(-1deg);
+  opacity:0.5;
+  border-radius:0.25em;
+}
