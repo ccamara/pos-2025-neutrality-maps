@@ -14,7 +14,7 @@ format:
     transition: slide
     background-transition: fade
     #slide-tone: true
-    embed-resources: true
+    # embed-resources: true
 
 title-slide-attributes:
   data-background-image: img/Wikipedia_Political_Physical_World_Map.svg.png
@@ -138,8 +138,8 @@ Specific, detailed maps, related to their business model.
 
 Motivation: diverse Coverage and precision: diverse
 
--   OpenStreetMap
--   
+-   OpenStreetMap, "the wikipedia of the maps"
+-   ...
 :::
 ::::::
 
@@ -223,12 +223,11 @@ Or take the example of a crime map. Usually expressed in maps like this. Without
 
 ##  {background-image="img/north_down.jpg" background-size="contain"}
 
-
 ::: notes
 ![The Earth, as seen from outer space](https://f.rpp-noticias.io/2020/12/31/1040805iss062-e-117852jpg.jpg)
 :::
 
-## {background-image="img/street-fighter-ii-character-select-screen.jpg" background-size="contain" background-color="#000177"}
+##  {background-image="img/street-fighter-ii-character-select-screen.jpg" background-size="contain" background-color="#00006A"}
 
 ##  {.center}
 
@@ -255,7 +254,7 @@ There's a long history of maps and power
 :::
 
 ::: {.column width="50%"}
-![British Empire in 1886. Source: Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Imperial_Federation%2C_map_of_the_world_showing_the_extent_of_the_British_Empire_in_1886.jpg/960px-Imperial_Federation%2C_map_of_the_world_showing_the_extent_of_the_British_Empire_in_1886.jpg?20111207145101)
+![British Empire in 1886. Source: Wikimedia Commons](img/Imperial_Federation,_map_of_the_world_showing_the_extent_of_the_British_Empire_in_1886.jpg)
 :::
 :::::
 
@@ -269,63 +268,102 @@ Evaluating OpenStreetMap’s equity through participatory data visualisation
 
 ## Motivation
 
-Use data visualisations to understand whether these decisions had a positive or negative impact in under-represented communities.
+We wanted to understand how these decisions around mapping were impacting under-represented communities.
 
-Inspiration: Data Feminism
+We wanted to study a particular type of digital good: OpenStreetMap, to understand how neutrality is used to favour or hamper equity.
 
-![](https://makingmaps.net/wp-content/uploads/2021/06/screen-shot-2021-06-02-at-9.10.14-am.png)
+![Katherine d'Ignazio and Lauren Klein's Data feminism design principles](https://makingmaps.net/wp-content/uploads/2021/06/screen-shot-2021-06-02-at-9.10.14-am.png)
+
+::: notes
+Kowing about all of this, and inspired by the work of feminist geographers and d'Ignazio and Lauren data feminism principles, we wanted to understand whether these decisions decisions had a positive or negative impact in under-represented communities.
+:::
 
 ## OpenStreetMap (OSM)
 
 OSM is the largest and most exhaustive collaborative map of the world.
 
-Dubbed as the wikipedia of the maps.
-
-![](img/osm_id_editor.png){fig-alt="Editing OSM Data"}
-
-## OSM is huge!
-
-10,158,116 OSM users[^1]
-
-[^1]: According to <https://planet.openstreetmap.org/statistics/data_stats.html>
-
 ::::: columns
 ::: {.column width="50%"}
-![](img/graph2.png){fig-alt="A graph of OpenStreetMap contributors"}
+![OSM is a map](img/osm_cov.png)
 :::
 
 ::: {.column width="50%"}
-![](img/graph3.png){fig-alt="A graph of OpenStreetMap features"}
+![OSM is a database](img/osm_id_editor.png){fig-alt="Editing OSM Data"}
 :::
 :::::
 
-## OSM is everywhere!
+::: notes
+We have already mentioned OSM as the wikipedia of the maps
 
-*Major Sites*: Amazon, Apple, Baidu Maps, Facebook, Microsoft, Wikipedia and Wikimedia
+We know already that OSM is a collaborative map, but it is also a database, and because all their items are geo-located, we call it a "geospatial" database.
+:::
 
-*Transport*: Air France, Alaska Airlines, Deutsche Bahn, Grab, SNCF (French rail agency), Uber Geodata Software and Services: CARTO, Digital Globe, ESRI, Garmin, Mapbox, Telenav
+##  {.center .smaller}
 
-*Government*: Agence Française de Développement , Government of Brazil, Government of Italy: President’s Office, Police Scotland, US National Park Service, US State Department, USAID, Peace Corps….
+::: r-fit-text
+OSM's data, **contributed by 10,000,000 volunteers**,
 
-## What?
+complements **official data sources**, and
 
+populates thousands of **tools and services**.
+:::
+
+**Major Sites**: [Amazon]{.highlight-text}, [Apple]{.highlight-text}, Baidu Maps, Facebook, [Microsoft]{.highlight-text}, Wikipedia and Wikimedia
+
+**Transport**: [Air France]{.highlight-text}, Alaska Airlines, Deutsche Bahn, Grab, SNCF (French rail agency), [Uber]{.highlight-text}, Geodata Software and Services: CARTO, Digital Globe, ESRI, [Garmin]{.highlight-text}, Mapbox, Telenav
+
+**Government**: Agence Française de Développement, Government of Brazil, Government of Italy: President’s Office, [Police Scotland]{.highlight-text}, US National Park Service, US State Department, USAID, Peace Corps….
+
+::: notes
+OSM is huge and is everywhere!
+:::
+
+##  {.center}
+
+::: r-fit-text
+Like Wikipedia, **OSM is based**
+
+on principles of **openness** and **neutrality**
+:::
+
+“[OpenStreetMap maps world as it exists]{.highlight-text}, and includes mapping borders and countries according to actual current situation and [not a preferred or ideal situation]{.highlight-text}” ([OSM Wiki](https://wiki.openstreetmap.org/wiki/Disputed_territories))
+
+## What? {.center}
+
+::: r-fit-text
 -   Is OSM as neutral as it claims to be?
 -   How is the notion of neutrality being implemented?
 -   How is 'neutrality' affecting other, underrepresented demographics?
+:::
 
-## How?
+## How? {.smaller}
 
-Participatory research: teaming with *GeoChicas* and workshops
+::: r-fit-text
+Participatory research: teaming with *GeoChicas* to codesign data visualisations
+:::
 
+:::::::: columns
+:::::: {.column width="60%"}
+::::: columns
+::: {.column width="50%"}
 GeoChicas is a collective of feminist women linked to OpenStreetMap, originally Spanish-speaking, who work for women's empowerment and the reduction of the gender gap in OpenStreetMap communities and in communities associated with the world of free software and open data.
+:::
 
-## Some results
+::: {.column width="50%"}
+Data visualisations as a method to:
 
-## User demographics
+-   think about data (and representation)
+-   communicate and surface controversies
+:::
+:::::
+::::::
 
-10,158,116 OSM users[^2]
+::: {.column width="40%"}
+![](img/codesign.png)
+:::
+::::::::
 
-[^2]: According to <https://planet.openstreetmap.org/statistics/data_stats.html>
+## Understanding community composition {.smaller .center}
 
 ::::: columns
 ::: {.column width="50%"}
@@ -337,23 +375,53 @@ GeoChicas is a collective of feminist women linked to OpenStreetMap, originally 
 :::
 :::::
 
-## User Census
+Results are not representative, but significative: show a clear over-representation of certain demographics.
 
-![](img/osm_users_country.png)
+::: notes
+We've created visualisations like this to understand how heterogeneous is or is not
+:::
 
-## Co-design visualisation
+## How do users contribute to OSM? {.smaller}
 
-![](img/osm_dashboard_1.png)
+![A dashboard showing how groups contribute to OSM](img/osm_dashboard_1.png)
 
-## Workshop on alternative cartography
+Initial findings show differences in how women contribute to OSM.
 
-![WEB Dubois map of Philadelphia](http://berkeleyjournal.org/wp-content/uploads/2016/01/Philadelphia.jpg)
+::: notes
+We've created a dashboard showing how a group of users contribute to OSM so we can compare how similar or different are the contributions patterns of certain users.
+:::
+
+## Alternative cartography {.smaller}
+
+::::: columns
+::: {.column width="60%"}
+Planning a series of workhops aimed at **creating maps that address particular needs of underrepresented minorities using data that is available in OpenStreetMap**
+
+Prompts:
+
+-   Aim: what would you want the map to help you with?
+
+-   Iconography: how are the icons being used?
+
+-   Information being displayed or not: what do you want to be seen? How would you like it to be represented?
+
+Audience:
+
+-   **People from non-hegemonic demographics** (women, racialized, LGTBQ+) who feel that current maps do not sufficiently address their needs.
+
+-   **Map enthusiasts**, Data visualization enthusiasts and OpenStreetMap users with a keen interest in EDI issues.
+
+-   **Activists**, Researchers, or people sensitive to EDI issues and inequalities (we will particularly welcome people interested in issues related to gender, race or queer topics).
 
 You are invited!
+:::
 
-link: <https://warwick.ac.uk/fac/cross_fac/cim/research/digital-good-neutrality-osm/inclusive-cartographies-workshop/>
+::: {.column width="40%"}
+![WEB Dubois map of Philadelphia](http://berkeleyjournal.org/wp-content/uploads/2016/01/Philadelphia.jpg)
 
-![Kelly 2020](img/iconography.png)
+![Kelly 2020](img/iconography.png){width="300"}
+:::
+:::::
 
 ## Some findings
 
@@ -363,6 +431,18 @@ link: <https://warwick.ac.uk/fac/cross_fac/cim/research/digital-good-neutrality-
 
 -   Difficult tension:
 
-    -   OSM universalists aspiration collides with considerations
+    -   OSM universalists aspiration collides with feminist approaches that advocate for taking into account context and relations
 
--   
+# Takeaways {background-image="img/neutral-map.png" background-opacity="0.7"}
+
+-   No map is perfect. No map is neutral. No map is finished.
+
+-   OpenStreetMap is not an exception to this, but it is a cool project.
+
+    -   Join it and use it! -\> <https://openstreetmap.org>
+
+-   Our research aims to understand OSM better and contribute to make it more equitable.
+
+    -   Join us!
+
+#  {background-image="img/thank-you.gif"}
