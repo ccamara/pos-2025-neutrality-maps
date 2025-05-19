@@ -51,9 +51,9 @@ title-slide-attributes:
 
 [Timothy.monteath\@warwick.ac.uk](mailto:Timothy.monteath@warwick.ac.uk)
 
-{{< fa brands mastodon >}}[\@twm.mastodon.sdf.org](https://mastodon.sdf.org@twm)
+{{< fa brands mastodon >}} [\@twm.mastodon.sdf.org](https://mastodon.sdf.org@twm)
 
-{{< fa brands bluesky >}}
+{{< fa brands bluesky >}} [\@twm.bsky.social](https://bsky.app/profile/twm.bsky.social)
 :::
 :::::
 
