@@ -10,7 +10,7 @@ format:
   # warwickpres-revealjs: 
     theme: [default, css/warwick.scss, css/warwick-fonts.scss]
     logo: img/Pint-of-Science-Logo-with-Glasses.png
-    footer: "ADD SLIDES' URL!!!!"
+    # footer: "ADD SLIDES' URL!!!!"
     transition: slide
     background-transition: fade
     #slide-tone: true
@@ -235,7 +235,7 @@ Or take the example of a crime map. Usually expressed in maps like this. Without
 So what?
 :::
 
-## Maps and power {.smaller background-color="#393A3B"}
+## Maps and power {.smaller .center background-color="#393A3B"}
 
 ::::: columns
 ::: {.column width="50%"}
@@ -391,7 +391,7 @@ Initial findings show differences in how women contribute to OSM.
 We've created a dashboard showing how a group of users contribute to OSM so we can compare how similar or different are the contributions patterns of certain users.
 :::
 
-## Alternative cartography {.smaller}
+## Inclusive cartographies {.smaller}
 
 ::::: columns
 ::: {.column width="60%"}
