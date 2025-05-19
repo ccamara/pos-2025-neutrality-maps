@@ -67,7 +67,25 @@ Hello, we are Carlos Cámara and Tim Monteath, and today we are going to talk ab
 ![](img/gulf-america.png)
 :::
 
+::: notes
+
+Let's start with a warm up question: "do you think that maps are objective?" Please, raise your hands if you think that's the case.
+
+It's a fair assumption. We use maps for plenty of things and that may have been our experience so far.
+
+Now, does this image change your mind?
+
+As you know, one of the first things Trump did when in power was to rename the gulf of mexico to gulf of America, and companies like Google have followed to update their maps accordingly.
+
+:::
+
 # Map-making {background-color="#3C1053"}
+
+::: notes
+
+In any case, to properly answer this question, we need to understand how maps are made and who makes them, and this is what Tim is going to explain.
+
+:::
 
 ## How are maps made? {.smaller}
 
